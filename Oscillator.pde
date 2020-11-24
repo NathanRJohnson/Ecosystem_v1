@@ -1,4 +1,4 @@
-/*
+/**
 * Acts as the propellor of the creature
 * Not necissary, but when I designed the creature
 * in step 3, I used and oscillator, so here it is.

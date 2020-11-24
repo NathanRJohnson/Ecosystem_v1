@@ -1,3 +1,6 @@
+/**
+* Base Class for Squidly and Twidly
+*/
 class Creature {
 
   PVector location;
@@ -84,25 +87,6 @@ class Creature {
     updateLimit(1);
   }
 
-  //void intersects(ArrayList<Squidly> squids) {
-  //  for (Squidly other : squids) {
-  //    if (other != this) {
-  //      float d = PVector.dist(other.location, location);
-  //      if (d < mass*16 + other.mass*16) {
-  //        //check if availabe to reproduce
-  //        if (isMale && !other.isMale) {
-  //          if (lifespan > 400 && other.lifespan > 400) {
-  //            if (!isMale) {
-  //              createEgg();
-  //            }
-  //          }
-  //        }
-  //      }
-  //    }
-  //  }
-  //}
-
-
   void display() {
     pushMatrix();
     translate(location.x, location.y);
@@ -125,9 +109,9 @@ class Creature {
     acceleration.add(f);
   }
 
-  /*
-  * For following the mouse
-   */
+/**
+* For following the mouse
+*/
   void follow(PVector target) {
     factor = -(abs(map(factor, 0, 100, 0, 10)) - 10);
     //factor = abs(map(factor, 1, 100, 10, 1) - 10);
@@ -137,9 +121,9 @@ class Creature {
     acceleration.add(dir);
   }
 
-  /*
-  * Follows the target
-   */
+/**
+* Follows the target
+*/
   void track() {
     factor = -(abs(map(factor, 0, 100, 0, 10)) - 10);
     PVector dir = PVector.sub(t.location, location);
@@ -161,9 +145,9 @@ class Creature {
     }
   }
 
-  /*
-* Says if the creature has died
-   */
+/**
+* Returns true if the creature has died
+*/
   boolean isDead() {
     if (lifespan < 0.0) {
       return true;
@@ -171,9 +155,9 @@ class Creature {
     return false;
   }
 
-  /*
+/**
 * when creature reaches the edge of the screen, negate it's velocity to send it in the opposite direction
-   */
+*/
   void reflectEdges() {
     //[full] When it reaches one edge, set location to the other.
     if (location.x > width) {
@@ -203,3 +187,22 @@ class Creature {
     return nSpecies;
   }
 }
+
+
+  //void intersects(ArrayList<Squidly> squids) {
+  //  for (Squidly other : squids) {
+  //    if (other != this) {
+  //      float d = PVector.dist(other.location, location);
+  //      if (d < mass*16 + other.mass*16) {
+  //        //check if availabe to reproduce
+  //        if (isMale && !other.isMale) {
+  //          if (lifespan > 400 && other.lifespan > 400) {
+  //            if (!isMale) {
+  //              createEgg();
+  //            }
+  //          }
+  //        }
+  //      }
+  //    }
+  //  }
+  //}

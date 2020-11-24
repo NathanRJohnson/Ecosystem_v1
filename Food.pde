@@ -1,4 +1,4 @@
-/*
+/**
 * Class for the food which the creatures must eat to surivie and reproduce
 */
 class Food {

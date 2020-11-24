@@ -1,4 +1,4 @@
-/*
+/**
 * See ReadMe.md please
 */
 
@@ -26,8 +26,6 @@ void setup() {
 
 void draw() {
   background(#68F0E8);
-  //Tell me how many squidlys there are
-
 
   fs.addFood();
   //Checkts to see if a creature is over top of food

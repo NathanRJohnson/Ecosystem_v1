@@ -1,6 +1,6 @@
-/*
-*Slower, longer strokes
-*Cicle head
+/**
+* Slower, longer strokes
+* Cicle head
 */
 class Squidly extends Creature {
 

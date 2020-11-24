@@ -1,5 +1,5 @@
-/*
-*Move with quicker short strokes, are faster than Squidlys, repoduce more easily, die quicker
+/**
+* Move with quicker short strokes, are faster than Squidlys, repoduce more easily, die quicker
 */
 class Twidly extends Creature {
 
@@ -34,6 +34,9 @@ class Twidly extends Creature {
     }
   }
 
+/**
+* Draw the headshape
+*/
 
   void star(float x, float y, float radius1, float radius2, int npoints) {
     float angle = TWO_PI / npoints;

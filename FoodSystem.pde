@@ -1,5 +1,5 @@
-/*
-* System class to control the arraylist of food
+/**
+* Maintains an ArrayList of Food
 */
 
 class FoodSystem {
@@ -10,7 +10,7 @@ class FoodSystem {
     foods = new ArrayList<Food>();
   }
 
-/*
+/**
 * adds food provided we are within the food limit
 */
   void addFood() {
@@ -19,7 +19,7 @@ class FoodSystem {
     }
   }
 
-/*
+/**
 * checks if the food is intersecting any creatures
 * I don't think I use this method, and instead use the intersects method in the CreatureSystem
 */
@@ -29,7 +29,7 @@ class FoodSystem {
     }
   }
 
-/*
+/**
 * Tell food to display and remove any eaten food
 */
   void run() {

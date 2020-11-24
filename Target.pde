@@ -1,4 +1,4 @@
-/*
+/**
 * Used within Creature class
 * Sets an arbitrary within the screen for the creature to 
 * navigate to

@@ -1,5 +1,5 @@
-/*
-* Maintains arraylist of creatures
+/**
+* Maintains an ArrayList of Creatures
 */
 class CreatureSystem {
 
@@ -9,7 +9,7 @@ class CreatureSystem {
     creatures = new ArrayList<Creature>();
   }
 
-/*
+/**
 * Called at program startup to randomly generate a population of Squidlies and Twidlies
 */
   void InitializeSystem() {
@@ -23,8 +23,8 @@ class CreatureSystem {
     }
   }
 
-/*
-* add a Creature to the system. If there are two many creatures (shouldn't happen) the program exits to avoid using to much memory
+/**
+* add a Creature to the system. If there are too many creatures (shouldn't happen) the program exits to avoid using to much memory
 */
   void addCreature() {
 
@@ -40,7 +40,7 @@ class CreatureSystem {
     }
   }
   
-/*
+/**
 * Loops through the system and tells each creature to run. 
 * Removes creatures from the system when they die
 */
@@ -56,7 +56,7 @@ class CreatureSystem {
     }
   }
   
-/*
+/**
 * Counts the number of Squidlies in the system
 */
   int numSquidlys() {
@@ -69,7 +69,7 @@ class CreatureSystem {
     return sum;
   }
   
-/*
+/**
 * Counts the number of Twidlies in the system
 */
   int numTwidlys() {
@@ -100,9 +100,6 @@ class CreatureSystem {
     }
   }
 
-/*
-* For debugging purposes
-*/
   int getType() {
     for (Creature c : creatures) {
       if (c instanceof Twidly) {
