@@ -14,9 +14,9 @@
 The program seeks to simulate a simple ecosystem consisting of two species of creature, Squidlies and Twidlies, as they attempt to outlast the other, each individual keeping their species alive by gathering more food and reproducing, until one of the species runs out of members, a.k.a goes extinct.
 
 ### The Creatures
-Each creature is on a timer, where each tick their life points decrease. Once their lifepoints reach 0, the creature is considered dead and is removed from the simulation. Creatures can increase their lifepoints by eating food. Eating enough food fast enough will allow the creature to reproduce, adding another member of their species to the simulation, and thus improving that species odds of survival.
+Each creature is on a timer; their life points are constantly decreasing. Once their lifepoints reach 0, the creature is considered dead and is removed from the simulation. Creatures can increase their lifepoints by eating food. Eating enough food fast enough will allow the creature to reproduce, adding another member of their species to the simulation, and thus improving that species's odds of survival.
 
-The heads of the creatures will change color depending on how many lifepoints they currently have. A healthly creature will have a dark head, whereas a creature on very low lifepoints will have a white head.
+A creature's head will change color depending on how many lifepoints they currently have. A healthy creature will have a dark head, whereas a creature on very low lifepoints will have a white head.
 
 1. Squidlies: Characterized by their round heads and slow, methodical, powerful strokes. A lower frequency movement than their counterpart, but make up for it with a longer lifespan.
 2. Twidlies: Star-shaped heads and quick short strokes. Reproduce more easily than their counterpart, but have a much lower lifespan.
