@@ -1,7 +1,9 @@
 # Ecosystem_v1
 
 ## How to run
-1. Open the project folder and navigate to the file with your OS name
+1. Open the project folder and unzip the file with your OS name
+2. Navigate to the executable file inside called Ecosystem_v1
+
 #### For Windows
 1. Open either the application.windows32 or the application.windows64 folder and double click the executable file
 2. Escape to exit the program
