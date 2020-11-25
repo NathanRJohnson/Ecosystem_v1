@@ -2,14 +2,16 @@
 
 ## How to run
 1. Open the project folder and unzip the file with your OS name
-2. Navigate to the executable file inside called Ecosystem_v1
 
 #### For Windows
-1. Open either the application.windows32 or the application.windows64 folder and double click the executable file
+1. After unzipping the windows_executables folder, open either the application.windows32 or the application.windows64 folder and double click the executable file
 2. Escape to exit the program
 
 ##### For Linux
-1. I don't know for certain, but I think if you navigate to one of the application.linux folders from your command line and use the command $ ./Ecosystem_v1, it will run
+1. After unzipping the linux_executables folder, navigate using the terminal to either the application.linux folder that your OS supports
+2. Run "$ sudo chmod a+x Ecosystem_v1" to make the program file executable
+3. Run "$ ./Ecosystem_v1"
+4. Escape to exit the program
 
 ## High Level Overview
 ### Intro
